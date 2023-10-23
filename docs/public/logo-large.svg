@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="411" height="411" viewBox="0 0 411 411" xml:space="preserve">
+<desc>Created with Fabric.js 3.6.6</desc>
+<defs>
+</defs>
+<g transform="matrix(0.39 0 0 0.39 205 206)"  >
+<g style=""   >
+		<g transform="matrix(5.06 0 0 5.06 24.6 -24.6)" id="icon-0"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(51,40,133); fill-rule: nonzero; opacity: 1;"  x="-97.51283568" y="-97.51283568" rx="0" ry="0" width="195.02567136" height="195.02567136" />
+</g>
+		<g transform="matrix(5.06 0 0 5.06 -24.6 24.6)" id="icon-0"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(51,40,133); fill-rule: nonzero; opacity: 0.5;"  x="-97.51283568" y="-97.51283568" rx="0" ry="0" width="195.02567136" height="195.02567136" />
+</g>
+		<g transform="matrix(9.77 0 0 9.77 141.73 21.88)" id="z$-0"  >
+<polygon style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;"  points="-19.62,-4.34 -19.62,-3.59 -19.62,18.5 19.62,18.5 -19.62,-18.5 " />
+</g>
+		<g transform="matrix(9.77 0 0 9.77 32.75 -148.54)" id="z$-0"  >
+<polygon style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;"  points="7.99,-12.4 -7.99,-2.66 7.99,12.4 " />
+</g>
+		<g transform="matrix(9.77 0 0 9.77 -309.66 21.8)" id="z$-0"  >
+<polygon style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;"  points="-6.9,3.29 6.9,3.29 -0.45,-3.3 " />
+</g>
+		<g transform="matrix(9.77 0 0 9.77 -179.89 90.15)" id="z$-0"  >
+<polygon style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;"  points="11.81,10.58 11.81,-10.58 -11.81,-10.58 " />
+</g>
+		<g transform="matrix(9.77 0 0 9.77 405.88 173.57)" id="z$-0"  >
+<polygon style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;"  points="2.09,4.79 2.09,-4.79 -2.09,0.54 " />
+</g>
+		<g transform="matrix(9.77 0 0 9.77 339.08 155.97)" id="z$-0"  >
+<polygon style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;"  points="8.14,-4.41 -8.14,-4.41 1.22,4.41 " />
+</g>
+</g>
+</g>
+</svg>
