@@ -2,9 +2,11 @@
 
 All notable changes to `PlanCraft` will be documented in this file.
 
-## [Initial Release] - 2023-10-23
+## v1.0.0 - 2023-10-23
 
-### Added
+### [Initial Release] - 2023-10-23
+
+#### Added
 
 - Initial release of PlanCraft.
 - Features that simplify plan creation, management, and assignment.
