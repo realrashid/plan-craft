@@ -5,7 +5,7 @@ let year = new Date().getFullYear();
 const title = 'PlanCraft'
 const description = 'Elevate Your Plans Management with PlanCraft for Laravel. Transforming Laravel Plans Management. Break free from conventional database storage constraints.'
 const url = 'https://realrashid.github.io/plan-craft/'
-const image = `${url}/og.jpg`
+const image = `https://api.placid.app/u/2wagk?hl=PlanCraft&img=https%3A%2F%2Frealrashid.github.io%2Fplan-craft%2F&subline=Transforming%20Laravel%20Plans%20Management.%20Break%20free%20from%20conventional%20database%20storage%20constraints.`
 const twitter = 'rashidali05'
 const github = 'https://github.com/realrashid/plan-craft'
 const linkedin = 'https://linkedin.com/in/realrashid'
