@@ -1,43 +1,48 @@
-name: Run Tests
+name: Tests
 
-on: 
-  push:
-  pull_request:
+on: ['push', 'pull_request']
 
 jobs:
-  test:
+  ci:
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: true
       matrix:
         os: [ubuntu-latest]
-        php: [8.2, 8.3]
-        laravel: [10.*, 11.*]
-        stability: [prefer-lowest, prefer-stable]
+        php: [8.1, 8.2, 8.3]
+        laravel: [11.*, 10.*, 9.*]
+        dependency-version: [prefer-lowest, prefer-stable]
+        exclude:
+          - php: 8.1
+            laravel: 11.*
 
-    name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.stability }} - ${{ matrix.os }}
-
+    name: Tests P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.os }} - ${{ matrix.dependency-version }}
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
 
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: ${{ matrix.php }}
-          extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite, bcmath, soap, intl, gd, exif, iconv, imagick, fileinfo
-          coverage: none
+    - name: Checkout
+      uses: actions/checkout@v2
 
-      - name: Setup problem matchers
-        run: |
-          echo "::add-matcher::${{ runner.tool_cache }}/php.json"
-          echo "::add-matcher::${{ runner.tool_cache }}/phpunit.json"
+    - name: Cache dependencies
+      uses: actions/cache@v1
+      with:
+        path: ~/.composer/cache/files
+        key: dependencies-php-${{ matrix.php }}-L${{ matrix.laravel }}-${{ matrix.dependency-version }}-composer-${{ hashFiles('composer.json') }}
 
-      - name: Install dependencies
-        run: |
-          composer require "laravel/framework:${{ matrix.laravel }}" --no-interaction
-          composer require "orchestra/testbench:^9.0" --no-interaction
-          composer update --${{ matrix.stability }} --prefer-dist --no-interaction
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: ${{ matrix.php }}
+        extensions: dom, mbstring, zip
+        coverage: none
 
-      - name: Execute tests
-        run: vendor/bin/pest
+    - name: Require Laravel Version
+      run: >
+        composer require
+        "laravel/framework:${{ matrix.laravel }}"
+        --no-interaction --no-update
+
+    - name: Install Composer dependencies
+      run: composer update --${{ matrix.dependency-version }} --no-interaction --prefer-dist
+
+    - name: Integration Tests
+      run: php ./vendor/bin/pest
