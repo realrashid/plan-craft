@@ -1,6 +1,8 @@
 name: Tests
 
-on: ['push', 'pull_request']
+on: 
+  push:
+  pull_request:
 
 jobs:
   ci:
@@ -39,6 +41,12 @@ jobs:
       run: >
         composer require
         "laravel/framework:${{ matrix.laravel }}"
+        --no-interaction --no-update
+
+    - name: Require Testbench Version
+      run: >
+        composer require
+        "orchestra/testbench:${{ matrix.laravel == '11.*' ? '^9.0' : ($matrix.laravel == '10.*' ? '^8.0' : '^7.0') }}"
         --no-interaction --no-update
 
     - name: Install Composer dependencies
