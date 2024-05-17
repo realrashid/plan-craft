@@ -14,7 +14,6 @@ jobs:
         php: [8.2, 8.3]
         laravel: [10.*, 11.*]
         stability: [prefer-lowest, prefer-stable]
-        testbench: ["^8.20", "^9.0"]
 
     name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.stability }} - ${{ matrix.os }}
 
@@ -37,7 +36,7 @@ jobs:
       - name: Install dependencies
         run: |
           composer require "laravel/framework:${{ matrix.laravel }}" --no-interaction
-          composer require "orchestra/testbench:${{ matrix.testbench }}" --no-interaction
+          composer require "orchestra/testbench:^9.0" --no-interaction
           composer update --${{ matrix.stability }} --prefer-dist --no-interaction
 
       - name: Execute tests
