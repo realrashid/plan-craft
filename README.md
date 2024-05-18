@@ -1,4 +1,4 @@
-# PlanCraft
+![PlanCraft](https://realrashid.github.io/plan-craft/assets/hero.63bbea69.webp)
 
 PlanCraft is a powerful Laravel package engineered to revolutionize how you manage subscription plans and features within your Laravel SaaS application. Say goodbye to the hassle of database wrangling and tedious queries. PlanCraft is your shortcut to seamless plan creation in Laravel. No more tables, no more queries - just pure, unadulterated efficiency.
 
