@@ -44,6 +44,8 @@ If you find PlanCraft helpful and would like to support my work, you can buy me 
 
 [![Buy me a coffee](https://cdn.buymeacoffee.com/buttons/default-orange.png)](https://www.buymeacoffee.com/realrashid)
 
+<a href="https://www.producthunt.com/posts/plancraft?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-plancraft" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=458190&theme=light" alt="PlanCraft - Elevate&#0032;Your&#0032;Plans&#0032;Management&#0032;with&#0032;PlanCraft&#0032;for&#0032;Laravel | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
