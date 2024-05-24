@@ -88,7 +88,7 @@ class Plan implements JsonSerializable
      *
      * @return void
      */
-    public function __construct(string $key, string $name, object $price, array $interval, array $features, array $eligibilities, array $planId = null)
+    public function __construct(string $key, string $name, object $price, array $interval, array $features, array $eligibilities, ?array $planId = null)
     {
         $this->key = $key;
         $this->name = $name;

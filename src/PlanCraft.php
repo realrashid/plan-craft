@@ -21,7 +21,7 @@ class PlanCraft
     /**
      * Find the plan with the given key or planId.
      *
-     * @param  string  $key - The key or planId of the plan to find.
+     * @param  string  $key  - The key or planId of the plan to find.
      * @return RealRashid\PlanCraft\Plan|null - The found plan or null if not found.
      */
     public static function findPlan(string $key): ?Plan
@@ -38,16 +38,16 @@ class PlanCraft
     /**
      * Define a plan.
      *
-     * @param  string  $key - The key of the plan.
-     * @param  string  $name - The name of the plan.
-     * @param  string  $price - The price of the plan (formatted as "monthly|yearly").
-     * @param  string  $interval - The billing interval of the plan (formatted as "Monthly|Yearly").
-     * @param  array  $features - Array of features associated with the plan.
-     * @param  array  $eligibilities - Array of eligibility criteria for the plan.
-     * @param  string  $planId - The plan's unique identifier used for payment processing (formatted as "price_monthly|price_yearly").
+     * @param  string  $key  - The key of the plan.
+     * @param  string  $name  - The name of the plan.
+     * @param  string  $price  - The price of the plan (formatted as "monthly|yearly").
+     * @param  string  $interval  - The billing interval of the plan (formatted as "Monthly|Yearly").
+     * @param  array  $features  - Array of features associated with the plan.
+     * @param  array  $eligibilities  - Array of eligibility criteria for the plan.
+     * @param  string  $planId  - The plan's unique identifier used for payment processing (formatted as "price_monthly|price_yearly").
      * @return RealRashid\PlanCraft\Plan - The newly created plan.
      */
-    public static function create(string $key, string $name, string $price, string $interval, array $features, array $eligibilities, string $planId = null)
+    public static function create(string $key, string $name, string $price, string $interval, array $features, array $eligibilities, ?string $planId = null)
     {
         // Ensure unique features across all plans
         static::$features = collect(array_merge(static::$features, $features))
