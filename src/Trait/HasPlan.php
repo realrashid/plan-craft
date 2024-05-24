@@ -31,7 +31,7 @@ trait HasPlan
      * an associated plan with the provided $planKey. If a plan with the specified key is found,
      * the method returns true, indicating that the user has the plan. Otherwise, it returns false.
      *
-     * @param  string  $planKey - The key of the plan to check for.
+     * @param  string  $planKey  - The key of the plan to check for.
      * @return bool - True if the user has the plan, false otherwise.
      */
     public function hasPlan(string $planKey): bool
@@ -61,7 +61,7 @@ trait HasPlan
      * If a plan is found, it is returned as a `Plan` instance. If no plan matches the provided key
      * or planId, the method returns null.
      *
-     * @param  string  $planKey - The key or planId of the plan to find.
+     * @param  string  $planKey  - The key or planId of the plan to find.
      * @return RealRashid\PlanCraft\Plan|null - The corresponding Plan instance, or null if not found.
      */
     public function findPlan($planKey): ?Plan
@@ -79,7 +79,7 @@ trait HasPlan
      * plan is found, a new plan record is created using the morphOne relationship, associating
      * it with the user. The method returns true to indicate a successful plan creation.
      *
-     * @param  string  $planKeyOrId - The key or planId of the plan to create.
+     * @param  string  $planKeyOrId  - The key or planId of the plan to create.
      * @return bool - True if the plan was created successfully, false otherwise.
      */
     public function createPlan($planKeyOrId): bool
@@ -173,7 +173,7 @@ trait HasPlan
      * is accessible based on the plan's defined features. It returns a boolean value indicating
      * if the user can access the feature.
      *
-     * @param  string  $feature - The name of the feature to check access for.
+     * @param  string  $feature  - The name of the feature to check access for.
      * @return bool - True if the user can access the feature, false otherwise.
      */
     public function canAccessFeature(string $feature): bool
@@ -189,8 +189,8 @@ trait HasPlan
      * of times the user has already performed the action. It returns a boolean value indicating
      * whether the user is eligible.
      *
-     * @param  string  $eligibilityKey - The key of the eligibility to check eligibility for.
-     * @param  int  $userCreated - The user's count for the specific eligibility limit (default is 0).
+     * @param  string  $eligibilityKey  - The key of the eligibility to check eligibility for.
+     * @param  int  $userCreated  - The user's count for the specific eligibility limit (default is 0).
      * @return bool - True if the user is eligible, false otherwise.
      */
     public function checkEligibility(string $eligibilityKey, int $userCreated = 0): bool
@@ -232,7 +232,7 @@ trait HasPlan
      * returns false to indicate that no switch was performed. If the new plan is found, it deletes
      * the current plan (if it exists) and creates a new plan with the specified key.
      *
-     * @param  string  $newPlanKeyOrId - The key or planId of the new plan.
+     * @param  string  $newPlanKeyOrId  - The key or planId of the new plan.
      * @return bool - True if the switch was successful, false otherwise.
      */
     public function switchPlan(string $newPlanKeyOrId): bool
@@ -268,7 +268,7 @@ trait HasPlan
      * to all features. Additionally, it checks for specific wildcard cases with the help of the
      * `checkWildcardFeature` method.
      *
-     * @param  string  $feature - The specific feature to check for access.
+     * @param  string  $feature  - The specific feature to check for access.
      * @return bool - True if the user has access, false otherwise.
      */
     protected function checkSpecificFeatureAccess(string $feature): bool
@@ -287,8 +287,8 @@ trait HasPlan
      * It checks if the feature ends with ':create' or ':update' and if there's a wildcard entry in the list of plan features
      * that grants access to all create or update actions. This method is used in conjunction with `checkSpecificFeatureAccess`.
      *
-     * @param  string  $feature - The specific feature to check for wildcard access.
-     * @param  array  $features - The list of features associated with the user's plan.
+     * @param  string  $feature  - The specific feature to check for wildcard access.
+     * @param  array  $features  - The list of features associated with the user's plan.
      * @return bool - True if the user has wildcard access to the feature, false otherwise.
      */
     protected function checkWildcardFeature(string $feature, array $features): bool
