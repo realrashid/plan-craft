@@ -5,7 +5,7 @@ Welcome to the seamless world of PlanCraft! Follow these steps to unleash its po
 ## Step 1: Composer Magic ✨
 
 ```bash
-composer require realrashid/plancraft
+composer require realrashid/plan-craft
 ```
 
 Inject a dose of magic into your project with this one-liner. Watch as PlanCraft materializes within your Laravel application.
