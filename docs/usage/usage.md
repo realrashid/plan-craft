@@ -8,7 +8,7 @@ In the model file (`User.php`, `Team.php`, or any other applicable model), use t
 
 ```php
 use Illuminate\Database\Eloquent\Model;
-use PlanCraft\Trait\HasPlan;
+use RealRashid\PlanCraft\Trait\HasPlan;
 
 class User extends Model
 {
