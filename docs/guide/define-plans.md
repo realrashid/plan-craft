@@ -65,8 +65,8 @@ The incantation above conjures the following magical JSON representation:
     "max_teams": 5
   },
   "planId": {
-    "monthly": "bisic_price_monthly",
-    "yearly": "bisic_price_yearly"
+    "monthly": "basic_price_monthly",
+    "yearly": "basic_price_yearly"
   },
   "trialDays": 7,
   "monthlyIncentive": null,
@@ -85,7 +85,7 @@ PlanCraft::create('basic', 'Basic', '12', 'Monthly', [
 ], [
     'max_chirps' => 2,
     'max_teams' => 5,
-], 'bisic_price_monthly')
+], 'basic_price_monthly')
 ->description('Basic plan users can create 10 Chirps per team and create 5 Teams.')
 ->trialDays(7);
 ```
@@ -112,7 +112,7 @@ PlanCraft::create('basic', 'Basic', '12', 'Monthly', [
     "max_teams": 5
   },
   "planId": {
-    "monthly": "bisic_price_monthly"
+    "monthly": "basic_price_monthly"
   },
   "trialDays": 7,
   "monthlyIncentive": null,
