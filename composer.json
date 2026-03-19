@@ -53,7 +53,7 @@
     },
     "scripts": {
         "post-update-cmd": [
-            "@php artisan boost:update"
+            "[ -f artisan ] && php artisan boost:update || true"
         ],
         "post-autoload-dump": "@composer run prepare",
         "clear": "@php vendor/bin/testbench package:purge-plancraft --ansi",
