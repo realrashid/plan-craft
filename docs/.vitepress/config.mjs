@@ -51,6 +51,10 @@ export default defineConfig({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-NX57383V8Y');`
+        ],
+        [
+            'script',
+            { async: '', src: 'https://media.bitterbrains.com/main.js?from=RASHIDALI&type=top' }
         ]
 
     ],

@@ -2,6 +2,11 @@
 
 Welcome to the seamless world of PlanCraft! Follow these steps to unleash its power in your Laravel application.
 
+## Requirements
+
+- PHP 8.2 or higher
+- Laravel 10.0, 11.0, 12.0 or 13.0
+
 ## Step 1: Composer Magic ✨
 
 ```bash
